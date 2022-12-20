@@ -27,12 +27,7 @@ public:
     }
 
     void Set(Graph<Vertex, EdgeT> *g) { // Установка графа
-        if (g->Directed()) cout << " Wrong Graph " << endl;
         this->g1 = g;
-    }
-
-    void Restart() {
-        result();
     }
 
     void result(int vertex) { // Получение результата
@@ -71,7 +66,7 @@ public:
         }
         for (int i = 0; i < size; i++) {
             if (AncestorsEdge[i] != -1) {
-                cout << "Вершина " << i << " " << " Вторая вершина " << " " << AncestorsEdge[i] << endl;
+                cout << i << " <-> " << AncestorsEdge[i] << endl;
             }
         }
     }

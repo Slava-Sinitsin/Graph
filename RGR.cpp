@@ -541,6 +541,10 @@ int main() {
                 break;
             }
             case 46: {
+                if(graph->Directed()) {
+                    cout << " Wrong Graph " << endl;
+                    break;
+                }
                 auto *tasssk = new Task3<TVertex, TEdge>(graph);
                 cout << " Введите вершину" << endl;
                 int vertexCheck;
